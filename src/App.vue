@@ -1,12 +1,16 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <contador-body :valorInicial="10" />
+  </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-
+import ContadorBody from '@/components/ContadorBody.vue'
 @Component({
-  components: {},
+  components: {
+    ContadorBody,
+  },
 })
 export default class App extends Vue {}
 </script>
